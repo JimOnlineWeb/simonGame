@@ -19,6 +19,16 @@ $("body").on("keypress", function () {
   }
 })
 
+$("body").on("click", function () {
+
+  if (!started) {
+    nextSequence();
+    $("#level-title").text("Level 0")
+    started = true;
+  }
+})
+
+
 $(".btn").on("click", function () {
   let userChosenColour = this.id
   userClickedPattern.push(userChosenColour)
