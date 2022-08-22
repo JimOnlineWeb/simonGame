@@ -10,7 +10,7 @@ let level = 0;
 let started = false;
 
 
-$("body").on("keydown tap", function () {
+$("body").on("keydown", function () {
 
   if (!started) {
     nextSequence();
@@ -18,7 +18,14 @@ $("body").on("keydown tap", function () {
     started = true;
   }
 })
+$("#tap").on("click", function () {
 
+  if (!started) {
+    nextSequence();
+    $("#level-title").text("Level 0")
+    started = true;
+  }
+})
 
 
 $(".btn").on("click", function () {
