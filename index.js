@@ -62,7 +62,7 @@ function checkAnswer(currentLevel) {
   else {
     let wrongSound = new Audio("sounds/wrong.mp3")
     wrongSound.play()
-    document.querySelector("h1").innerHTML = "Game Over, Press Any Key to Restart"
+    document.querySelector("h1").innerHTML = "Game Over, Press Any Key or Refresh to Restart"
     $("body").addClass("game-over")
     setTimeout(function () {
       $("body").removeClass("game-over")
