@@ -63,11 +63,12 @@ function checkAnswer(currentLevel) {
   else {
     let wrongSound = new Audio("sounds/wrong.mp3")
     wrongSound.play()
-    document.querySelector("h1").innerHTML = "Game Over, Press Any Key to Restart"
+    
     $("body").addClass("game-over")
     setTimeout(function () {
       $("body").removeClass("game-over")
     }, 200);
+    $("#level-title").text("Game Over, Press Any Key to Restart");
     startOver();
   }
   // console.log("wrong");
