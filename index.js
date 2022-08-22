@@ -10,7 +10,7 @@ let level = 0;
 let started = false;
 
 
-$("body").on("keypress", function () {
+$("body").on("keydown tap", function () {
 
   if (!started) {
     nextSequence();
@@ -19,14 +19,7 @@ $("body").on("keypress", function () {
   }
 })
 
-$("body").on("tap", function () {
 
-  if (!started) {
-    nextSequence();
-    $("#level-title").text("Level 0")
-    started = true;
-  }
-})
 
 $(".btn").on("click", function () {
   let userChosenColour = this.id
