@@ -7,7 +7,11 @@ body {
   font-family: 'Press Start 2P', cursive;
   font-size: 3rem;
   margin:  5%;
+  line-height: 1.2;
   color: #FEF2BF;
+}
+#tap{
+  text-decoration:underline;
 }
 a:link {
   color: orange;
